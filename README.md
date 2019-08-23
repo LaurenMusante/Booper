@@ -6,17 +6,21 @@
 
 ## Specifications & Description
 
-* _If user input contains a 1, all digits are replaced with "Beep!"_
+* _The program returns a range of numbers from 0 to the users inputted number_
+  * _Example input: "5"_
+  * _Example output: "0, 1, 2, 3, 4, 5"_
+
+* _If user input contains a 1, all digits in the number are replaced with "Beep!"_
   * _Example input: 145_
   * _Example output: "Beep!"_
 
-* _If user input contains a 2, all digits are replaced with "Boop!"_
+* _If user input contains a 2, all digits in the number are replaced with "Boop!"_
   * _Example input: 28_
-  * _Example output: "Boop!"
+  * _Example output: "Boop!"_
 
-* _If user input contains a 3, all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
+* _If user input contains a 3, all digits  in the number are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
   * _Example input: 39_
-  * _Example output: "I'm sorry, Dave. I'm afraid I can't do that."
+  * _Example output: "I'm sorry, Dave. I'm afraid I can't do that."_
 
 * _Specs are listed in order of importance, with each one overriding the previous spec_
   * _Example input: 123_
