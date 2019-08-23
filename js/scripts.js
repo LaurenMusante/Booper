@@ -4,32 +4,35 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("#input").val());
     var returnArray = [];
+
     if (input <1){
-      alert("Enter a number greater than 0.")
+      alert("Enter a number greater than 0.");
     } else {
       output = booper(input);
     }
-    $("#output").text(returnArray);
+
+$("#output").text(returnArray);
+return returnArray;
 
 //BACK END
-function booper(input){
 var returnArray = [];
 var input = $("#input").val();
+function booper(input){
     for (var i=0; i<=input; i++) {
       returnArray.push(i);
       console.log(returnArray)
 
       if (returnArray.includes(3)){
-          returnArray[i] += "I'm sorry Dave. I'm afraid I cant do that.";
-          console.log("I'm sorry");
+          returnArray[i] = "I'm sorry Dave. I'm afraid I cant do that.";
+
         } else if (returnArray.includes(2)){
-          returnArray[i] += "Boop!"
-          console.log("Boop!")
+          returnArray[i] = "Boop!"
+
         } else if (returnArray.includes(1)){
-          returnArray[i] += ("Beep!")
+          returnArray[i] = "Beep!"
         }
     };
-        return returnArray;
       };
     });
+    // return returnArray;
   });
