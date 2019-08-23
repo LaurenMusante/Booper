@@ -1,31 +1,36 @@
+//USER INTERFACE USER INTERFACE USER INTERFACE USER INTERFACE
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
+    var input = parseInt($("#input").val());
 
-var string = $("#input").val();
-var output = converter(string);
-// var string2 = document.getElementById($("#input"));
-// var split = string.split('');
-function converter(){
-    for (var i=0; i<string; i++) {
-        if (string.includes("3")){
-          console.log("I'm sorry Dave. I'm afraid I cant do that.")
-        } else if (string.includes("2")){
+    if (input <1){
+      alert("Enter a number greater than 0.")
+    } else {
+      output = booper(input);
+    }
+    $("#output").text(booper());
+
+//BACKEND BACKEND BACKEND BACKEND BACKEND BACKEND BACKEND
+function booper(input){
+  var returnArray = [];
+  var input = $("#input").val();
+
+    for (var i=0; i<=returnArray.length; i++) {
+      returnArray.push(input);
+      console.log("here")
+      if (returnArray.includes("3")){
+          returnArray[i] = "I'm sorry Dave. I'm afraid I cant do that.";
+          console.log("I'm sorry");
+        } else if (returnArray.includes("2")){
+          returnArray[i] = "Boop!"
           console.log("Boop!")
-        } else if (string.includes("1")){
-          console.log("Beep!")
-        } else {
-          return alert("array")//array containing each number leading up to inputted number.
+
+        } else if (returnArray.includes("1")){
+          returnarray[i].push = ("Beep!")
+        }
         };
+        return returnArray;
       };
-    };
-    return output;
+    });
   });
-});
-
-
-
-// var stringWithThree = string.includes("3")
-// var stringWithTwo = string.includes("2")
-// var stringWithOne = string.includes("1")
-//maybe can also just have i< 1000000000 or something.
