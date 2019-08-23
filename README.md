@@ -26,12 +26,9 @@
   * _Example input: 123_
   * _Example output: "I'm sorry, Dave. I'm afraid I can't do that"_
 
-
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
-
 ## Setup/Installation Requirements
 
-* _Open the index.html file in the browser of your choosing_
+* _Clone [this repository](https://github.com/LaurenMusante/Booper) to your desktop. Use Terminal to open the project in Atom. Open index.html in Atom. Use the cursor to drag index.html into a functional web browser._
 
 
 ## Technologies Used
