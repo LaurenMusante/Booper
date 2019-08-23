@@ -3,21 +3,23 @@ $(document).ready(function() {
     event.preventDefault();
 
 var string = $("#input").val();
-var string2 = document.getElementById($("#input"));
+var output = converter(string);
+// var string2 = document.getElementById($("#input"));
 // var split = string.split('');
 function converter(){
-    for (var i=0; i<9000000; i++) {
-        if (string2.includes("3")){
+    for (var i=0; i<string; i++) {
+        if (string.includes("3")){
           console.log("I'm sorry Dave. I'm afraid I cant do that.")
-        } else if (string2.includes("2")){
+        } else if (string.includes("2")){
           console.log("Boop!")
-        } else if (string2.includes("1")){
+        } else if (string.includes("1")){
           console.log("Beep!")
         } else {
           return alert("array")//array containing each number leading up to inputted number.
         };
       };
     };
+    return output;
   });
 });
 
